@@ -6,6 +6,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
+mlflow.set_tracking_uri("http://127.0.0.1:5000")
+mlflow.set_experiment("Student_Stress_Classification")
+
 mlflow.autolog()
 
 BASE_DIR = os.path.dirname(
