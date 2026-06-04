@@ -1,0 +1,17 @@
+digest: 2ffd0aab
+name: dataset
+profile: '{"num_rows": 640, "num_elements": 8960}'
+schema: '{"mlflow_colspec": [{"type": "long", "name": "Student_ID", "required": true},
+  {"type": "long", "name": "Gender", "required": true}, {"type": "double", "name":
+  "Age", "required": true}, {"type": "double", "name": "Semester", "required": true},
+  {"type": "double", "name": "Study_Hours_Per_Day", "required": true}, {"type": "double",
+  "name": "Assignment_Load", "required": true}, {"type": "double", "name": "Sleep_Hours",
+  "required": true}, {"type": "double", "name": "Attendance_Percentage", "required":
+  true}, {"type": "double", "name": "Screen_Time_Hours", "required": true}, {"type":
+  "double", "name": "Caffeine_Intake", "required": true}, {"type": "double", "name":
+  "Extracurricular_Hours", "required": true}, {"type": "double", "name": "Exam_Pressure",
+  "required": true}, {"type": "double", "name": "Financial_Stress", "required": true},
+  {"type": "double", "name": "Social_Support", "required": true}]}'
+source: '{"tags": {"mlflow.user": "Lenovo", "mlflow.source.name": "Membangun_model/modelling.py",
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "b11503c512bdb5e51d1c6038aac01face5307ccc"}}'
+source_type: code

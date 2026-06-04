@@ -1,0 +1,10 @@
+artifact_location: file:///D:/dicoding/stres/Kharisma-StudentStress-MLOps/Workflow-CI/MLProject/mlruns/924452671180350134/models/m-0c260e642b954ec884e75737d6dd92b6/artifacts
+creation_timestamp: 1780567933491
+experiment_id: '924452671180350134'
+last_updated_timestamp: 1780567945586
+model_id: m-0c260e642b954ec884e75737d6dd92b6
+model_type: null
+name: model
+source_run_id: aa47e304d7a3424db63a7396f9eb3b3b
+status: 2
+status_message: null

@@ -1,0 +1,39 @@
+artifact_path: file:///D:/dicoding/stres/Kharisma-StudentStress-MLOps/Workflow-CI/MLProject/mlruns/924452671180350134/models/m-0c260e642b954ec884e75737d6dd92b6/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.12.0
+model_id: m-0c260e642b954ec884e75737d6dd92b6
+model_size_bytes: 2447064
+model_uuid: m-0c260e642b954ec884e75737d6dd92b6
+prompts: null
+run_id: aa47e304d7a3424db63a7396f9eb3b3b
+signature:
+  inputs: '[{"type": "long", "name": "Student_ID", "required": true}, {"type": "long",
+    "name": "Gender", "required": true}, {"type": "double", "name": "Age", "required":
+    true}, {"type": "double", "name": "Semester", "required": true}, {"type": "double",
+    "name": "Study_Hours_Per_Day", "required": true}, {"type": "double", "name": "Assignment_Load",
+    "required": true}, {"type": "double", "name": "Sleep_Hours", "required": true},
+    {"type": "double", "name": "Attendance_Percentage", "required": true}, {"type":
+    "double", "name": "Screen_Time_Hours", "required": true}, {"type": "double", "name":
+    "Caffeine_Intake", "required": true}, {"type": "double", "name": "Extracurricular_Hours",
+    "required": true}, {"type": "double", "name": "Exam_Pressure", "required": true},
+    {"type": "double", "name": "Financial_Stress", "required": true}, {"type": "double",
+    "name": "Social_Support", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-06-04 10:12:13.661687'
