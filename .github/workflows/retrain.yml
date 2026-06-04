@@ -7,11 +7,9 @@ on:
 
 jobs:
   retrain:
-
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout Repository
         uses: actions/checkout@v4
 
@@ -22,10 +20,8 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install mlflow
-          pip install pandas
-          pip install scikit-learn
+          pip install -r MLProject/requirements.txt
 
-      - name: Run MLflow Project
+      - name: Train Model
         run: |
-          mlflow run . -e main
+          python MLProject/Membangun_model/modelling.py
