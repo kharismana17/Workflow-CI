@@ -1,0 +1,16 @@
+creation_timestamp: 1780550155916
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1780550155916
+model_id: m-5c7c5fc7d8f84e01aa11c1c50e5a2d40
+name: StressPrediction
+run_id: 8adb6bff68c14da8a2196c068345b321
+run_link: null
+source: models:/m-5c7c5fc7d8f84e01aa11c1c50e5a2d40
+status: READY
+status_message: null
+storage_location: file:D:/dicoding/stres/Kharisma-StudentStress-MLOps/Workflow-CI/MLProject/mlruns/0/models/m-5c7c5fc7d8f84e01aa11c1c50e5a2d40/artifacts
+user_id: null
+version: 1
+workspace: default

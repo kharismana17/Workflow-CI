@@ -1,0 +1,23 @@
+artifact_path: file:D:/dicoding/stres/Kharisma-StudentStress-MLOps/Workflow-CI/MLProject/mlruns/0/models/m-5c7c5fc7d8f84e01aa11c1c50e5a2d40/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.12.0
+model_id: m-5c7c5fc7d8f84e01aa11c1c50e5a2d40
+model_size_bytes: 2447064
+model_uuid: m-5c7c5fc7d8f84e01aa11c1c50e5a2d40
+prompts: null
+run_id: 8adb6bff68c14da8a2196c068345b321
+utc_time_created: '2026-06-04 05:15:48.809906'
