@@ -11,9 +11,14 @@ tracking_uri = os.getenv("MLFLOW_TRACKING_URI")
 if tracking_uri:
     mlflow.set_tracking_uri(tracking_uri)
 
-mlflow.set_experiment("StressPrediction_Basic")
-
 mlflow.autolog()
+
+experiment_name = os.getenv(
+    "MLFLOW_EXPERIMENT_NAME",
+    "StressPrediction_Basic"
+)
+
+mlflow.set_experiment(experiment_name)
 
 BASE_DIR = os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))
