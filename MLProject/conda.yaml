@@ -1,14 +1,11 @@
+name: stressprediction
 
-name: stressenv
+channels:
+  - conda-forge
 
 dependencies:
+  - python=3.12
+  - pip
 
-- python=3.12
-
-- pip
-
-- pip:
-
-  - mlflow==2.19.0
-  - pandas
-  - scikit-learn
+  - pip:
+      - -r requirements.txt
