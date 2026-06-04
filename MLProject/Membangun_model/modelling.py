@@ -5,19 +5,17 @@ import mlflow
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
-
 tracking_uri = os.getenv("MLFLOW_TRACKING_URI")
 
 if tracking_uri:
     mlflow.set_tracking_uri(tracking_uri)
 
+print("MLFLOW_TRACKING_URI =", os.getenv("MLFLOW_TRACKING_URI"))
+print("Resolved tracking URI =", mlflow.get_tracking_uri())
+
 mlflow.autolog()
 
-experiment_name = os.getenv(
-    "MLFLOW_EXPERIMENT_NAME",
-    "StressPrediction_Basic"
-)
-
+experiment_name = "StressPrediction_Basic"
 mlflow.set_experiment(experiment_name)
 
 BASE_DIR = os.path.dirname(
