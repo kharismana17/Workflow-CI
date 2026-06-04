@@ -7,20 +7,19 @@ jobs:
   train:
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+    defaults:
+      run:
+        working-directory: MLProject
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Install Dependencies
-        run: |
-          pip install mlflow
-          pip install -r MLProject/requirements.txt
+      - name: Install dependencies
+        run: pip install -r requirements.txt
 
-      - name: Run MLflow Project
-        run: |
-          mlflow run MLProject -e main --env-manager local
+      - name: Train model
+        run: python Membangun_model/modelling.py
